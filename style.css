@@ -10,4 +10,130 @@
 body {
   font-size: 16px;
   font-family: "IBM Plex Sans Arabic", sans-serif;
+  background: #0e1227;
+}
+
+/* Info Board && Title Styles */
+.info-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  color: #947c45;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 70px;
+  letter-spacing: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.info-board {
+  width: 300px;
+  height: 150px;
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.start-btn {
+  background: none;
+  border: 2px solid #947c45;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.reset-btn {
+  background: none;
+  border: 2px solid #947c45;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: none;
+}
+
+.info-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 30px;
+  flex-direction: column;
+}
+
+.player-turn {
+  margin-left: 10px;
+}
+
+.player {
+  font-weight: bold;
+}
+
+/* Gameboard styles */
+.gameboard-container {
+  display: flex;
+  justify-content: center;
+}
+.gameboard-wrapper {
+  justify-content: center;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.square {
+  border: 2px solid #fff;
+  width: 150px;
+  height: 120px;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+.square-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 116px;
+  font-size: 40px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.square-content:hover {
+  background: rgb(148, 124, 69);
+}
+
+.players {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 150px;
+}
+
+.player-active {
+  transform: scale(1.5);
+}
+
+.defaultPlayer {
+  margin-right: 120px;
+}
+
+.secondlyPlayer {
+  margin-left: 120px;
+}
+
+.winner {
+  font-size: 24px;
 }
